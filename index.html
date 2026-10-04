@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>I wash my dog — Lavaggio self-service per animali a Castel Maggiore</title>
+<meta name="description" content="I wash my dog: lavaggio self-service per cani a Castel Maggiore (BO). Vasche comode, acqua calda, shampoo e asciugatura a gettoni. Lavi tu il tuo cane, senza appuntamento — 4,5★ su Google.">
+<meta name="theme-color" content="#1b253c">
+<meta property="og:title" content="I wash my dog — Lavaggio self-service per animali">
+<meta property="og:description" content="Il self-service dove lavi tu il tuo cane: vasche, acqua calda, shampoo e asciugatura a gettoni. A Castel Maggiore, senza appuntamento.">
+<meta property="og:image" content="logo.png">
+<meta property="og:type" content="business.business">
+<link rel="icon" href="logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --navy:#1b253c;      /* logo navy — primary */
+  --navy2:#28344f;     /* lighter navy */
+  --cyan:#7cc4d6;      /* logo cyan — accent */
+  --cyan-d:#4f9fb3;    /* deeper cyan */
+  --light:#e6f2f5;     /* pale cyan */
+  --cream:#f5f8f9;     /* page bg */
+  --ink:#1b253c;
+  --disp:'Baloo 2',system-ui,sans-serif;
+  --sans:'Inter',system-ui,sans-serif;
+  --shadow:5px 5px 0 var(--ink);
+  --shadow-lg:8px 8px 0 var(--ink);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:var(--ink);background:var(--cream);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{text-decoration:none;color:inherit}
+svg{width:1em;height:1em}
+.disp{font-family:var(--disp);font-weight:800;line-height:1.02;letter-spacing:-.01em}
+.wrap{max-width:1160px;margin:0 auto;padding:0 24px}
+.reveal{opacity:0;transform:translateY(24px);transition:.7s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* ---------- header ---------- */
+.site-head{position:sticky;top:0;z-index:50;background:var(--navy);color:#fff;border-bottom:3px solid #0e1626}
+.nav{display:flex;align-items:center;justify-content:space-between;height:72px}
+.brand{display:flex;gap:12px;align-items:center;font-family:var(--disp);font-weight:800;font-size:1.2rem;color:#fff}
+.brand .bm{width:46px;height:46px;border-radius:12px;background:#fff;display:grid;place-items:center;border:2px solid #0e1626;overflow:hidden;flex:none}
+.brand .bm img{width:100%;height:100%;object-fit:cover}
+.nav-links{display:flex;gap:26px}
+.nav-links a{color:rgba(255,255,255,.9);font-weight:600;font-size:.92rem}
+.nav-links a:hover{color:var(--cyan);text-decoration:underline;text-underline-offset:5px;text-decoration-thickness:2px}
+.navcta{background:var(--cyan);color:var(--navy);padding:10px 18px;border-radius:10px;font-weight:700;display:inline-flex;gap:8px;align-items:center;border:2px solid #0e1626;box-shadow:3px 3px 0 rgba(0,0,0,.3);transition:.15s}
+.navcta:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 rgba(0,0,0,.35)}
+.navcta svg{width:16px;height:16px}
+
+/* ---------- hero (split: navy text left, bright photo right) ---------- */
+.hero{position:relative;background:var(--navy);color:#fff;overflow:hidden;border-bottom:3px solid #0e1626;display:flex;align-items:center;min-height:clamp(560px,80vh,720px)}
+.hero-media{position:absolute;top:0;right:0;bottom:0;width:46%;z-index:0}
+.hero-media img{width:100%;height:100%;object-fit:cover;object-position:60% center}
+.hero-media::before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--navy) 0%,rgba(27,37,60,.85) 18%,rgba(27,37,60,.25) 50%,rgba(27,37,60,0) 82%)}
+.hero .wrap{position:relative;z-index:2;width:100%;padding-top:56px;padding-bottom:56px}
+.hero-inner{max-width:540px;padding-right:12px}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:var(--cyan);color:var(--navy);padding:8px 15px;border-radius:999px;text-transform:uppercase;letter-spacing:.1em;font-size:.72rem;font-weight:700}
+.hero h1{font-family:var(--disp);font-weight:800;font-size:clamp(2.5rem,5vw,3.9rem);line-height:1;letter-spacing:-.015em;margin:20px 0 16px}
+.hero h1 .u{position:relative;white-space:nowrap;color:var(--cyan)}
+.hero .lead{font-size:1.15rem;max-width:44ch;margin-bottom:26px;color:rgba(255,255,255,.92)}
+.cta-row{display:flex;gap:13px;flex-wrap:wrap;margin-bottom:26px}
+.btnp,.btng{display:inline-flex;gap:9px;align-items:center;padding:15px 26px;border-radius:12px;font-weight:700;border:2px solid #0e1626;transition:.15s}
+.btnp{background:var(--cyan);color:var(--navy);box-shadow:4px 4px 0 rgba(0,0,0,.4)}
+.btng{background:#fff;color:var(--navy);box-shadow:4px 4px 0 rgba(0,0,0,.4)}
+.btnp:hover,.btng:hover{transform:translate(-2px,-2px);box-shadow:6px 6px 0 rgba(0,0,0,.45)}
+.btnp svg,.btng svg{width:18px;height:18px}
+.btng.wa svg{color:#128C7E}
+.hbadges{display:flex;gap:10px;flex-wrap:wrap}
+.chip{display:inline-flex;gap:7px;align-items:center;background:rgba(255,255,255,.12);border:2px solid rgba(255,255,255,.4);padding:7px 14px;border-radius:999px;font-weight:700;font-size:.83rem}
+.chip svg{width:15px;height:15px}
+.chip .stars{color:var(--cyan)}
+
+/* ---------- sections ---------- */
+.section{padding:86px 0}
+.sec-head{margin-bottom:44px;max-width:680px}
+.sec-head .eyebrow{background:var(--navy);color:#fff}
+.sec-head h2{font-family:var(--disp);font-weight:800;font-size:clamp(2rem,4.6vw,3.2rem);line-height:1.02;margin-top:14px}
+.sec-head p{color:#5c6675;margin-top:10px;font-size:1.05rem}
+
+/* services */
+.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.card{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:26px 22px;box-shadow:var(--shadow);transition:.18s}
+.card:hover{transform:translate(-3px,-3px);box-shadow:8px 8px 0 var(--cyan-d)}
+.cardico{display:grid;place-items:center;width:52px;height:52px;border-radius:13px;background:var(--light);color:var(--navy);border:2px solid var(--ink);margin-bottom:15px}
+.cardico svg{width:25px;height:25px}
+.card h3{font-family:var(--disp);font-weight:700;font-size:1.12rem;margin-bottom:7px}
+.card p{color:#5c6675;font-size:.94rem}
+
+/* steps */
+.steps{background:var(--light);border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.steprow{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.step{background:#fff;border:3px solid var(--ink);border-radius:16px;padding:28px 24px;box-shadow:var(--shadow);position:relative}
+.step .n{position:absolute;top:-18px;left:24px;width:38px;height:38px;display:grid;place-items:center;font-family:var(--disp);font-weight:800;background:var(--cyan);color:var(--navy);border:3px solid var(--ink);border-radius:50%;box-shadow:2px 2px 0 var(--ink)}
+.step h3{font-family:var(--disp);font-weight:700;font-size:1.14rem;margin:14px 0 6px}
+.step p{color:#5c6675;font-size:.95rem}
+
+/* why */
+.why{background:var(--navy);color:#fff}
+.why .sec-head .eyebrow{background:var(--cyan);color:var(--navy)}
+.why .sec-head h2{color:#fff}
+.why .sec-head p{color:rgba(255,255,255,.65)}
+.feats{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.feat{border:2px solid rgba(255,255,255,.22);border-radius:16px;padding:26px}
+.featico{display:grid;place-items:center;width:50px;height:50px;border-radius:12px;background:var(--cyan);color:var(--navy);margin-bottom:14px}
+.featico svg{width:24px;height:24px}
+.feat h3{font-family:var(--disp);font-weight:700;font-size:1.14rem;margin-bottom:6px}
+.feat p{color:rgba(255,255,255,.68);font-size:.95rem}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.gal figure{margin:0;border-radius:14px;overflow:hidden;aspect-ratio:1;border:3px solid var(--ink);box-shadow:var(--shadow)}
+.gal img{width:100%;height:100%;object-fit:cover;transition:.35s}
+.gal figure:hover img{transform:scale(1.07)}
+
+/* review */
+.review{background:var(--navy);color:#fff;text-align:center;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)}
+.review .rstars{display:inline-flex;gap:4px;margin-bottom:16px;color:var(--cyan)}
+.review .rstars svg{width:24px;height:24px}
+.review blockquote{font-family:var(--disp);font-weight:800;font-size:clamp(1.6rem,4vw,2.5rem);max-width:840px;margin:0 auto 14px;line-height:1.08}
+.review .src{opacity:.9;font-weight:600;color:var(--cyan)}
+
+/* contact */
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
+.crow{display:flex;gap:15px;padding:18px 0;border-bottom:2px solid #dbe4e7}
+.crow:last-child{border:0}
+.crow>svg{width:24px;height:24px;color:var(--cyan-d);flex:none;margin-top:2px}
+.cl{font-size:.72rem;text-transform:uppercase;letter-spacing:.08em;color:#8a939e;font-weight:700}
+.cv{display:block;font-weight:700;font-size:1.04rem}
+a.cv:hover{color:var(--cyan-d)}
+.mapbtn{display:flex;flex-direction:column;justify-content:flex-end;min-height:300px;border-radius:16px;padding:26px;background:var(--light);border:3px solid var(--ink);box-shadow:var(--shadow-lg);position:relative;overflow:hidden;transition:.18s}
+.mapbtn:hover{transform:translate(-3px,-3px);box-shadow:11px 11px 0 var(--cyan-d)}
+.mapbtn .pin{position:absolute;top:22px;right:24px;width:46px;height:46px;color:var(--cyan-d)}
+.mapbtn b{font-family:var(--disp);font-weight:800;font-size:1.25rem}
+.mapbtn span{color:#3a4653}
+.mapbtn .go{margin-top:16px;align-self:flex-start;background:var(--navy);color:#fff;padding:12px 24px;border-radius:10px;font-weight:700;border:2px solid var(--ink)}
+
+/* cta band */
+.ctaband{text-align:center;padding:60px 30px;background:var(--navy);color:#fff;border-radius:22px;max-width:1000px;margin:0 auto;border:3px solid var(--ink);box-shadow:var(--shadow-lg);position:relative;overflow:hidden}
+.ctaband::before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(124,196,214,.12) 2px,transparent 2px);background-size:24px 24px}
+.ctaband h2{position:relative;font-family:var(--disp);font-weight:800;font-size:clamp(1.9rem,4.4vw,3rem);margin-bottom:12px}
+.ctaband p{position:relative;color:rgba(255,255,255,.75);max-width:520px;margin:0 auto 24px}
+.ctaband .cta-row{position:relative;justify-content:center;margin-bottom:0}
+
+/* footer */
+footer{padding:44px 0 30px;color:#7a828d;border-top:3px solid var(--ink)}
+.fgrid{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.fbrand{display:flex;gap:12px;align-items:center;font-family:var(--disp);font-weight:800;color:var(--navy)}
+.fmark{width:42px;height:42px;border-radius:11px;background:#fff;display:grid;place-items:center;border:2px solid var(--ink);overflow:hidden}
+.fmark img{width:100%;height:100%;object-fit:cover}
+.fnote{margin-top:20px;font-size:.78rem}
+.fsoc{display:flex;gap:10px}
+.fsoc a{width:40px;height:40px;display:grid;place-items:center;border:2px solid var(--ink);border-radius:10px;background:#fff;color:var(--navy);transition:.15s}
+.fsoc a:hover{background:var(--navy);color:#fff;transform:translate(-2px,-2px);box-shadow:3px 3px 0 var(--cyan-d)}
+.fsoc svg{width:19px;height:19px}
+
+/* mobile call bar */
+.callbar{display:none}
+@media(max-width:560px){
+  .callbar{display:flex;position:fixed;left:10px;right:10px;bottom:10px;z-index:80;gap:8px}
+  .callbar .cb{flex:1;display:inline-flex;align-items:center;justify-content:center;gap:7px;padding:14px;border-radius:14px;font-weight:700;border:2px solid var(--ink);box-shadow:0 12px 30px -8px rgba(0,0,0,.45)}
+  .callbar .cb svg{width:18px;height:18px}
+  .cb.solid{background:var(--cyan);color:var(--navy)}
+  .cb.ghost{background:#fff;color:var(--navy)}
+  body{padding-bottom:74px}
+}
+
+/* responsive */
+@media(max-width:960px){
+  .cards{grid-template-columns:repeat(2,1fr)}
+  .gal{grid-template-columns:repeat(2,1fr)}
+  .feats{grid-template-columns:1fr}
+  .steprow{grid-template-columns:1fr}
+  .contact-grid{grid-template-columns:1fr}
+  .nav-links{display:none}
+  .section{padding:62px 0}
+  /* hero stacks: photo band on top, roomy navy text below */
+  .hero{display:block;min-height:0}
+  .hero-media{position:static;width:100%;height:clamp(240px,52vw,340px);border-bottom:3px solid #0e1626}
+  .hero-media img{object-position:center 40%}
+  .hero-media::before{background:linear-gradient(180deg,rgba(27,37,60,.28) 0%,rgba(27,37,60,0) 30%)}
+  .hero .wrap{padding-top:40px;padding-bottom:44px}
+  .hero-inner{max-width:none}
+  .hero h1{font-size:clamp(2.2rem,9vw,3.1rem);margin:16px 0 14px}
+  .hero .lead{font-size:1.06rem;max-width:none}
+}
+@media(max-width:560px){
+  .cards{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body id="top">
+
+<header class="site-head">
+  <div class="wrap nav">
+    <a class="brand" href="#top">
+      <span class="bm"><img src="logo.png" alt="Logo I wash my dog"></span>
+      I wash my dog
+    </a>
+    <nav class="nav-links">
+      <a href="#servizi">Servizi</a>
+      <a href="#come">Come funziona</a>
+      <a href="#perche">Perché noi</a>
+      <a href="#galleria">Galleria</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
+    <a class="navcta" href="tel:3284251220">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+      Chiama per info
+    </a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-media">
+    <img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWmyWEAoV8G84rlg68PMbhSzHcFhpfgItcLJRVFeOqq4OyWq9bQkU2kfbTupNVdrPMSO7lNL6HzOHD3ALsH0LpIJTTlzHvtGjR9ok7V7LfF-YL_8hdHoTzLc0V9T2EcJ2XKwx24=w1280-h960-k-no" alt="Cane appena toelettato da I wash my dog a Castel Maggiore" loading="eager">
+  </div>
+  <div class="wrap">
+    <div class="hero-inner">
+      <span class="eyebrow">Lavaggio self-service per animali · Castel Maggiore</span>
+      <h1>Lava il tuo cane, <span class="u">lo sporco lascialo a noi</span>.</h1>
+      <p class="lead">Il self-service per animali dove fai tutto tu, con calma: vasche comode, acqua calda, shampoo e asciugatura professionale, a gettoni. Niente appuntamento, niente bagno di casa allagato.</p>
+      <div class="cta-row">
+        <a class="btnp" href="tel:3284251220">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+          <span>Chiama per info</span>
+        </a>
+        <a class="btng wa" href="https://wa.me/393284251220" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.6-.6.8-.8 1-.1.2-.3.3-.1.6.2.4.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.9.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+      <div class="hbadges">
+        <span class="chip"><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg></span>4,5 su Google</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>Castel Maggiore (BO)</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 1.5" stroke-linecap="round"/></svg>Senza appuntamento</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="servizi">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Cosa trovi in postazione</span>
+      <h2 class="disp">Tutto pronto, pensi solo a lavarlo</h2>
+      <p>Ogni postazione ha già tutto quello che serve. Tu porti il cane e i gettoni: al resto pensano le nostre attrezzature professionali.</p>
+    </div>
+    <div class="cards">
+      <div class="card reveal">
+        <span class="cardico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 12h16v3a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4v-3Z" stroke-linejoin="round"/><path d="M7 12V7a2 2 0 0 1 2-2h1" stroke-linecap="round"/><path d="M19 19l1 2M5 19l-1 2" stroke-linecap="round"/></svg></span>
+        <h3>Vasche ad altezza uomo</h3>
+        <p>Comode e rialzate: niente schiena a pezzi e niente cani da sollevare in bagno.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cardico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 3s5 5.5 5 9a5 5 0 0 1-10 0c0-3.5 5-9 5-9Z" stroke-linejoin="round"/></svg></span>
+        <h3>Acqua calda regolabile</h3>
+        <p>Doccetta con getto e temperatura a tua scelta, per un bagno sempre piacevole.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cardico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="8" y="9" width="8" height="12" rx="2"/><path d="M10 9V6a2 2 0 0 1 2-2h1a2 2 0 0 1 2 2v3" stroke-linejoin="round"/><path d="M10 13h4" stroke-linecap="round"/></svg></span>
+        <h3>Shampoo &amp; balsamo</h3>
+        <p>Prodotti professionali già negli erogatori: delicati sulla pelle, profumo che dura.</p>
+      </div>
+      <div class="card reveal">
+        <span class="cardico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 8a4 4 0 0 1 4-4h4a4 4 0 0 1 0 8H8l-4 3V8Z" stroke-linejoin="round"/><path d="M16 12h2M16 9h4M16 15h3" stroke-linecap="round"/></svg></span>
+        <h3>Asciugatura potente</h3>
+        <p>Soffiatore professionale che asciuga in fretta e toglie i peli morti dal manto.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section steps" id="come">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Come funziona</span>
+      <h2 class="disp">Semplice come un autolavaggio</h2>
+      <p>Funziona proprio come il lavaggio self-service dell'auto: tre passi, i gettoni e fai tutto tu, con i tuoi tempi.</p>
+    </div>
+    <div class="steprow">
+      <div class="step reveal">
+        <span class="n">1</span>
+        <h3>Arrivi quando vuoi</h3>
+        <p>Nessun appuntamento: passi con il tuo cane, prendi i gettoni e scegli una postazione libera.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">2</span>
+        <h3>Lo lavi tu</h3>
+        <p>Inserisci il gettone e usa vasca, acqua calda e shampoo. Semplice, con calma e senza fretta.</p>
+      </div>
+      <div class="step reveal">
+        <span class="n">3</span>
+        <h3>Asciughi e vai</h3>
+        <p>Soffiatore professionale per un manto asciutto e profumato. La pulizia della postazione la lasci a noi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section why" id="perche">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Perché sceglierci</span>
+      <h2 class="disp">Il modo più comodo di lavarlo</h2>
+      <p>Tutta la libertà del fai-da-te, con la comodità delle attrezzature giuste. E casa tua resta pulita.</p>
+    </div>
+    <div class="feats">
+      <div class="feat reveal">
+        <span class="featico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5" stroke-linejoin="round"/><path d="M6 9.5V20h12V9.5" stroke-linejoin="round"/><path d="M10 20v-5h4v5" stroke-linejoin="round"/></svg></span>
+        <h3>Casa tua resta pulita</h3>
+        <p>Niente peli nello scarico, niente bagno allagato: lo sporco e l'acqua restano da noi.</p>
+      </div>
+      <div class="feat reveal">
+        <span class="featico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M9.5 12l1.8 1.8L15 10" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+        <h3>Attrezzature professionali</h3>
+        <p>Vasche rialzate, acqua calda, shampoo dedicati e soffiatore: la stessa qualità di un toelettatore.</p>
+      </div>
+      <div class="feat reveal">
+        <span class="featico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="8"/><path d="M12 8v4l2.5 1.5" stroke-linecap="round"/></svg></span>
+        <h3>Veloce, quando vuoi</h3>
+        <p>Paghi solo i gettoni che usi, senza appuntamento: entri, lavi ed esci in pochi minuti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="galleria">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Galleria</span>
+      <h2 class="disp">Facce da coccole</h2>
+      <p>Qualche scatto dei nostri amici a quattro zampe, freschi di toelettatura.</p>
+    </div>
+    <div class="gal">
+      <figure class="reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWlxxXgeITBa-NPUKzjv5wFPGTJTzGs00o6hO48qZpv9CR-lhZ4cL1ijVCZeKkXEZDhaFR8Lv4ted89N3Nbr6T8TSXwqJey_qgnLtulIOvFHE4Mpaa3kw4cSEiEk2E-b70JlpGe5=w1280-h960-k-no" alt="I wash my dog — cane in toelettatura, foto 1" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWk7G_Zo_Zds0bKlBnnsTLUZ30-dm6rcPqPFEHhvBzDrZ5riK6ZVURd1JbDwMrW9KIYxL8orV0Dorf6AGXSdCY8A8iKD3zqCWiFhWUfK4nJhbYt-Om-meO-X2H0VOeplSr--TesV=w1280-h960-k-no" alt="I wash my dog — cane appena lavato, foto 2" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWn8M_wjvu7OZDzjAoMTPZD4hqXJXil0E1i-7NwlLiVxQswLZzb9330eSmOXQMKBXFkJmCsnCVW4cYp1cxXzab5SOwdt4_G6ot9gdLkFG2oAdbc8Xah2vPpop8QLN_gyEoU2yqPL=w1280-h960-k-no" alt="I wash my dog — dettaglio toelettatura, foto 3" loading="lazy"></figure>
+      <figure class="reveal"><img src="https://lh3.googleusercontent.com/gps-cs-s/AHRPTWkqmYVHAuqf_D_h9MzNvPQCjAg7rI-Ytk80X2o2Gjhlum-g2uYExZnfh98pKM45ihbMEytZd42aWihQ31-zajlGDnvZB-RXeUr6vLMAz88tSux-iL1Qne1H_mA7N4Nc44vIZvIpbg=w1280-h960-k-no" alt="I wash my dog — cane felice dopo il bagno, foto 4" loading="lazy"></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section review">
+  <div class="wrap reveal">
+    <div class="rstars">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg>
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 3l2.6 5.9 6.4.6-4.8 4.3 1.4 6.2L12 17.8 6.4 20l1.4-6.2L3 9.5l6.4-.6L12 3Z"/></svg>
+    </div>
+    <blockquote>“Comodissimo: in venti minuti il mio cane è pulito e profumato, e il bagno di casa resta intatto.”</blockquote>
+    <div class="src">Recensione clienti · 4,5★ su Google</div>
+  </div>
+</section>
+
+<section class="section" id="contatti">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="eyebrow">Dove trovarci</span>
+      <h2 class="disp">Passa a trovarci o scrivici</h2>
+      <p>Siamo nel cuore di Castel Maggiore. Vieni quando vuoi, senza appuntamento — o scrivici per qualsiasi informazione.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
+          <div><span class="cl">Indirizzo</span><span class="cv">Piazza Amendola, 6/A, 40013 Castel Maggiore BO</span></div>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+          <div><span class="cl">Telefono</span><a class="cv" href="tel:3284251220">328 425 1220</a></div>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.6-.6.8-.8 1-.1.2-.3.3-.1.6.2.4.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.9.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
+          <div><span class="cl">WhatsApp</span><a class="cv" href="https://wa.me/393284251220" target="_blank" rel="noopener">Scrivici su WhatsApp</a></div>
+        </div>
+        <div class="crow">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2" stroke-linecap="round"/></svg>
+          <div><span class="cl">Orari</span><span class="cv">Senza appuntamento · consulta gli orari aggiornati sui nostri social</span></div>
+        </div>
+      </div>
+      <a class="mapbtn reveal" href="https://www.google.com/maps?cid=1186080619444531165" target="_blank" rel="noopener">
+        <svg class="pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s7-6.3 7-11a7 7 0 1 0-14 0c0 4.7 7 11 7 11Z" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.5"/></svg>
+        <b>Apri su Google Maps</b>
+        <span>Indicazioni stradali fino al negozio</span>
+        <span class="go">Vai →</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="section" style="padding-top:0">
+  <div class="wrap">
+    <div class="ctaband reveal">
+      <h2 class="disp">Il suo prossimo bagno è a un gettone 🐾</h2>
+      <p>Vieni quando vuoi, senza appuntamento. Hai una domanda prima di passare? Chiamaci o scrivici su WhatsApp.</p>
+      <div class="cta-row">
+        <a class="btnp" href="tel:3284251220">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>
+          <span>Chiama per info</span>
+        </a>
+        <a class="btng" href="https://wa.me/393284251220" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.6-.6.8-.8 1-.1.2-.3.3-.1.6.2.4.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.9.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap fgrid">
+    <div class="fbrand"><span class="fmark"><img src="logo.png" alt="Logo I wash my dog"></span>I wash my dog</div>
+    <div class="fsoc">
+      <a href="https://www.facebook.com/IWASHMYDOG/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M13 10h3l.5-3H13V5.5c0-.9.3-1.5 1.6-1.5H16.6V1.3C16.3 1.2 15.3 1 14.1 1 11.7 1 10 2.5 10 5.2V7H7v3h3v9h3v-9Z"/></svg></a>
+      <a href="https://www.instagram.com/iwash_mydog/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.3" cy="6.7" r="1.1" fill="currentColor" stroke="none"/></svg></a>
+      <a href="tel:3284251220" aria-label="Telefono"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg></a>
+    </div>
+  </div>
+  <div class="wrap fnote">Piazza Amendola, 6/A · 40013 Castel Maggiore (BO) · 328 425 1220<br>© 2026 I wash my dog · Landing page dimostrativa · Foto © rispettivi proprietari (da Google)</div>
+</footer>
+
+<div class="callbar">
+  <a class="cb solid" href="tel:3284251220"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 4h4l2 5-2.5 1.5a12 12 0 0 0 6 6L15 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2Z" stroke-linejoin="round"/></svg>Chiama</a>
+  <a class="cb ghost" href="https://wa.me/393284251220" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8s.7-2 .9-2.2c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5-.3.6-.6.8-.8 1-.1.2-.3.3-.1.6.2.4.8 1.3 1.7 2.1 1.1 1 2 1.3 2.3 1.4.3.1.5.1.7-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.9.2.1.4.2.4.3.1.2.1.7-.1 1.2Z"/></svg>WhatsApp</a>
+</div>
+
+<script>
+(function(){
+  var o=new IntersectionObserver(function(e){
+    e.forEach(function(t){if(t.isIntersecting){t.target.classList.add("in");o.unobserve(t.target)}})
+  },{threshold:.12});
+  document.querySelectorAll(".reveal").forEach(function(el,i){
+    el.style.transitionDelay=(i%3*70)+"ms";o.observe(el)
+  });
+})();
+</script>
+</body>
+</html>
